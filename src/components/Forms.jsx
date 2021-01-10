@@ -41,13 +41,13 @@ function Forms() {
     const handleClick = async (e) => {
         // e.preventDefault();
         console.log(client);
-       axios.post('http://localhost:5000',client)
+       axios.post('https://react-newsletter.herokuapp.com/',client)
        .then(console.log("New Client"))
        .catch(err=>console.log("There is an error " +err));
 
        setOpen(true);
 
-       axios.get('http://localhost:5000')
+       axios.get('https://react-newsletter.herokuapp.com/')
        .then((response) => {
         console.log(response.status);
         (response.status===200)
