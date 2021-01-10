@@ -1,0 +1,71 @@
+.App {
+  /* position: absolute; */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  margin :10% 40%;
+  border-style: solid;
+  box-shadow: 10px 5px;
+  background-color: #cfdac8;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5%;
+}
+.entry{
+  height: 25px;
+  margin: 3%;
+}
+
+.peeker{
+  position: absolute;
+  margin-left: 38%;
+  top: 100px;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: gold;
+  z-index: -1;
+}
+
+.eye{
+  position: absolute;
+  height: 20px;
+  width: 10px;
+  border-radius: 100%;
+  background-color: black;
+}
+
+.one{
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.two{
+  margin-top: 19px;
+  margin-left: 50px;
+}
+
+.peeker:hover .eye{
+  animation: blink 1s;
+}
+
+@keyframes blink{
+  0%{
+    height: 0;
+    width: 0;
+  }
+  50%{
+    height: 0;
+    width: 0;
+  }
+  100%{
+    height: 0;
+    width: 0;
+  }
+}
